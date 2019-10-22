@@ -1,0 +1,25 @@
+%nav.navbar.navbar-light.bg-light{style: 'background-color: #eee;'}
+  = link_to "#", class: "navbar-brand" do
+    = image_tag 'title-logo', width: 150, height: 50
+    %span.font-weight-bold{style: 'font-size: 30px;'} 念系統診断
+
+  %ul.nav
+    %li.nav-item.btn.btn-success
+      = link_to "#", class: "nav-link", style: "color: #fff;" do
+        診断開始
+    %li.nav-item.btn.btn-success.ml-1
+      = link_to "#", class: "nav-link", style: "color: #fff;" do
+        じゃんけん
+.container-fluid{style: 'height: calc(100vh - 78px);'}
+  .row.h-100
+    .col-4
+      %h1.text-center.mt-1 念能力とは？
+      %p.text-center 念能力とは、人間が体内に内在している生命エネルギー（オーラ）を操作する能力のこと。
+      %h1.text-center.mt-1 水見式
+      %p.text-center この念能力の系統は簡単に判断できる方法があります。この診断方法は非常に簡素で確実のため、『ハンターハンター』では頻繁に使われることが多い判断方法。
+      %p.text-center それが「水見式（みずみしき）」と呼ばれる診断方法。
+      %p.text-center 水見式を簡単に解説すると、水をタプタプに入れたグラスの上に葉っぱを乗せるだけ。この水を入れたグラスの付近に両手を持ってきて、このグラスに対して練を軽く行ってオーラを送るだけ。
+      = image_tag 'mizumisiki2', class: 'img-fluid'
+    .col-8.bg-danger
+  
+    
