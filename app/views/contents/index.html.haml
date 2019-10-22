@@ -12,14 +12,23 @@
         じゃんけん
 .container-fluid{style: 'height: calc(100vh - 78px);'}
   .row.h-100
-    .col-4
+    .col-4.border.border-dark
       %h1.text-center.mt-1 念能力とは？
       %p.text-center 念能力とは、人間が体内に内在している生命エネルギー（オーラ）を操作する能力のこと。
+      = image_tag 'mizumisiki2', class: 'img-fluid rounded-lg'
       %h1.text-center.mt-1 水見式
       %p.text-center この念能力の系統は簡単に判断できる方法があります。この診断方法は非常に簡素で確実のため、『ハンターハンター』では頻繁に使われることが多い判断方法。
       %p.text-center それが「水見式（みずみしき）」と呼ばれる診断方法。
       %p.text-center 水見式を簡単に解説すると、水をタプタプに入れたグラスの上に葉っぱを乗せるだけ。この水を入れたグラスの付近に両手を持ってきて、このグラスに対して練を軽く行ってオーラを送るだけ。
-      = image_tag 'mizumisiki2', class: 'img-fluid'
-    .col-8.bg-danger
+      
+    .col-8
+      .d-flex.flex-row
+        %section
+          %h3.text-center ヒソカのオーラ別性格分析
+          %p.text-center 水見式を行うには「練」を取得しないといけない。しかし習得してないあなたでも、簡単な性格診断でこの系統かも？くらいはわかります。ヒソカ曰く血液型診断と同じで根拠はないですが、少なくともゴン、キルア、ズシなどは納得の診断だったこの系統と性格の関係。
+          = image_tag 'hisoka', style: 'width: 95%; height: auto;'
+        = image_tag 'nen', class: "img-fluid align-content-center　bg-light", style: 'height: 50vh;'  
+      .row
+        = pie_chart @chart,class: 'bg-light'
   
     
