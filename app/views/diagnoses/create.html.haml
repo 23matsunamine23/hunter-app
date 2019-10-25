@@ -1,3 +1,7 @@
+%nav.navbar.navbar-light.bg-light.text-center.d-block.fixed-top{style: 'background-color: #eee;'}
+  = link_to "/contents/index", class: "navbar-brand" do
+    = image_tag 'title-logo', width: 150, height: 50
+    %span.font-weight-bold.align-middle{style: 'font-size: 30px;'} 念系統診断
 .container-fluid.w-75{style: 'height: 100vh; padding-top: 75px;'}
   .card
     .card-body
@@ -5,21 +9,25 @@
     - if @result == "あなたは強化系です"
       = image_tag "gonsan", class: "d-block", style: 'width: 100%; height: 70vh;'
       .card-body
-        %p.card-text.font-weight-bold.text-center{style: 'font-size: 25px;'} ・開放性が高く・好奇心旺盛・単純一途
+        %p.card-text.font-weight-bold.text-center{style: 'font-size: 25px;'} ・開放性が高い・単純一途
     - elsif @result == "あなたは変化系です"
       = image_tag "hisoka2", class: "d-block", style: 'width: 100%; height: 70vh;'
       .card-body
         %p.card-text.font-weight-bold.text-center{style: 'font-size: 25px;'} ・気まぐれ・嘘つき・誠実性が低い
-    - if @result == "あなたは操作系です"
-      = image_tag "irumi", class: "d-block", style: 'width: 100%; height: 70vh;'
+    - elsif @result == "あなたは操作系です"
+      = image_tag "irumi", class: "d-block", style: 'width: 80%; height: 70vh; margin: 0 auto;'
       .card-body
         %p.card-text.font-weight-bold.text-center{style: 'font-size: 25px;'} ・理屈屋・マイペース・協調性が低い
-    - if @result == "あなたは具現化系です"
-      = image_tag "kurapika", class: "d-block", style: 'width: 100%; height: 70vh;'
+    - elsif @result == "あなたは具現化系です"
+      = image_tag "kaito2", class: "d-block", style: 'width: 80%; height: 70vh; margin: 0 auto;'
       .card-body
         %p.card-text.font-weight-bold.text-center{style: 'font-size: 25px;'} ・神経質・メンタルが弱い
-    - if @result == "あなたは放出系です"
-      = image_tag "gonsan", class: "d-block", style: 'width: 100%; height: 70vh;'
+    - elsif @result == "あなたは放出系です"
+      = image_tag "zeno", class: "d-block", style: 'width: 100%; height: 70vh;'
       .card-body
         %p.card-text.font-weight-bold.text-center{style: 'font-size: 25px;'} ・短期・大雑把・外向性が高い
+    - elsif @result == "あなたは特質系です"
+      = image_tag "kurapika2", class: "d-block", style: 'width: 100%; height: 70vh;'
+      .card-body
+        %p.card-text.font-weight-bold.text-center{style: 'font-size: 25px;'} ・個人主義者・カリスマ性あり
     

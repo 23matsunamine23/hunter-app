@@ -22,7 +22,7 @@ class DiagnosesController < ApplicationController
   end
 
   def dicision_system(ele)
-    if ele[0] >= 7 && ele[1] <= 1 && ele[3] <= 2 && ele[4] >= 6
+    if ele[0] >= 7 && ele[1] >= 7 && ele[3] <= 2 && ele[4] >= 6
       "あなたは特質系です"
     else  
       if ele.max == ele[4]

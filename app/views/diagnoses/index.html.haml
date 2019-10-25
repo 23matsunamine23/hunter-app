@@ -5,72 +5,72 @@
 .container-fluid.w-75{style: 'height: 100vh; padding-top: 75px;'}
   %form{action: '/diagnoses/create', method: 'post', form: 'result'}
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'deai', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q1: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q1: 初対面の人と会話するのを、楽しめるかどうか。
       %select#result.custom-select{name: 'q1'}
         = render 'check_box'
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q2', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q2: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q2: 他人に思いやりがあり、みんなに平等に親切かどうか。
       %select#result.custom-select{name: 'q2'}
         = render 'check_box_reverse'
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q3', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q3: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q3: きっちり物事を手際よく、効率的に行うことができるかどうか。
       %select#result.custom-select{name: 'q3'}
         = render 'check_box_reverse'
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q4', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q4: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q4: 心配事が多く、気分の浮き沈みが激しいかどうか。
       %select#result.custom-select{name: 'q4'}
         = render 'check_box'  
     
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q5', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q5: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q5: 何か新しいことが好きで、好奇心が旺盛かどうか。
       %select#result.custom-select{name: 'q5'}
         = render 'check_box'  
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q6', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q6: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q6: 恥ずかしがり屋で物静かなタイプかどうか。
       %select#result.custom-select.q6{name: 'q6'}
         = render 'check_box_reverse'  
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q7', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q7: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q7: 思ったことをすぐ口に出してしまうタイプかどうか。
       %select#result.custom-select.q7{name: 'q7'}  
         = render 'check_box' 
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q8', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q8: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q8: やらなければいけない事をギリギリまで手をつけないタイプかどうか。
       %select#result.custom-select.q8{name: 'q8'}  
         = render 'check_box'  
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q9', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q9: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q9: 大抵の時リラックスしていて平穏なタイプかどうか。
       %select#result.custom-select.q9{name: 'q9'}  
         = render 'check_box'  
 
     .card
-      =image_tag 'kaito', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
+      =image_tag 'q10', class: "card-img-top d-block", style: 'width: 100%; height: 75vh;'
       .card-body.p-0
-        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q10: 初対面の人と会話するのを、楽しめるかどうか？
+        %p.font-weight-bold.text-center.m-0.p-2{style: 'font-size: 18px;'} Q10: 現実的で保守的なタイプかどうか。
       %select#result.custom-select.q10{name: 'q10'}  
         = render 'check_box_reverse'
     %button.btn.btn-primary.btn-lg.btn-block.mt-5.mb-5 結果を見る
